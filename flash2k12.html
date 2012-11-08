@@ -1,0 +1,11 @@
+<html><body style="margin:0"><canvas id="d">coded for Extra ex-demoparty 2012 by tom</canvas>
+<script>document.title="Flash2k retro: Terror Opera production 2012";
+c=d.getContext("2d");W=d.width=window.innerWidth;H=d.height=window.innerHeight;t=0;p=0;
+r=Math.random;s=Math.sin;c.strokeStyle='#FFF';c.font=""+W/30+"px Courier New";
+function f(a,b,x,y,w,g) {c.lineWidth=w*H/200;c.moveTo(a,b);c.lineTo(x,y);c.stroke();var q=w-r()/5;if(y<H){f(x,y,x+(r()-.5+g)*H/30,y+r()*H/20,q,g);if(w-q>.19)f(x,y,x+(r()-.5+g)*8,y+r()*10,w/2,r()-.5)}}
+function g(){c.fillStyle='#444';c.fillRect(0,0,W,H);c.beginPath();a=r()*W;f(a,0,a,0,.5+r()*2,r()-.5);p++;setTimeout(g,200+r()*2000)}
+function h(){c.fillStyle='rgba(0,0,0,.05)';c.fillRect(0,0,W,H);c.fillText("flash2k retro",14*W/20,H-(W/60));setTimeout(h,10)}
+function l(){c.lineWidth=.08;for(var m=0;m<W+H;m++){z=(s(m*926)*(W+H)+t)%(W+H);xx=(m+z-H)/2;yy=z-xx;c.beginPath();c.moveTo(xx,yy);c.lineTo(xx+5,yy+5);c.stroke()};t+=16;setTimeout(l,20)}
+g();h();l();
+</script>
+</body></html>
