@@ -18,3 +18,5 @@ I decided to summon the spirit of squeezing bytes at the last moment
 once more and wrote this faint reminder of these days:
 
 __Flash2k12__, a 1kB javascript intro, now in HD!
+
+Demo: http://jsfiddle.net/4tKYt/
